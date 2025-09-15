@@ -1,12 +1,13 @@
 body {
-        background-image: linear-gradient(to bottom, #090979, #0000ff); /* Your gradient */
-      
-        background-attachment: fixed;
-        background-size: cover;
-        font-family:Verdana, Geneva, Tahoma, sans-serif; 
-        margin: 0; 
-        animation:bg-pan-top 8s both;
-    }
+  background: linear-gradient(to bottom, #090979, #dadada);
+  background-attachment: fixed;
+  background-size: cover; /* Applies to both gradient and image */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents image tiling */
+  font-style: italic;
+  margin: 0;
+  animation: bg-pan-top 2s both;
+}
     @keyframes bg-pan-top {
         0% {
             background-position: center bottom;
@@ -16,19 +17,57 @@ body {
         }
     }
     .title {
+        font-family:cursive;
         color: rgb(65, 100, 207);
         text-align: center;
         padding: 20px 0;
         font-size: 4em;
         font-weight: bold;
     }
-    .tracking-in-expand{
-    }
+    
 
-.tracking-in-expand{animation:tracking-in-expand 2s cubic-bezier(.215,.61,.355,1.000) both}
 
-.subtitle {
+.subtitle{
+        font-size: 3em;
         color: rgb(65, 100, 207);
         text-align: center;
         padding: 10px 0;
+    }
+    .card-title{
+        width: 360px;
+         height:  530px;
+          transform-style: preserve-3d;
+           transition: transform .8s ease-in-out;
+            cursor: pointer;
+             border: 1.2px solid #ddd;
+              box-shadow: 10px 10px 15px rgba(194, 9, 9, 0.5), -5px -5px 10px rgba(0, 0, 0, 0.2);
+               border-radius: 10px;
+               margin: auto;
+               background-image: url('logo.png');
+               background-size: cover;
+               background-position: center;
+               background-repeat: no-repeat;
+               background-size: 360px 430px;
+    }
+    .card-title:hover{
+        transform: rotateY(180deg);
+        background-image: none;
+    }
+    .second-card-title{display: none;
+    }
+    .card-title:hover .second-card-title{
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotateY(180deg);
+        font-size: 2em;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        font-weight: bold;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+      .card-title:hover .first-card-title{
+        display: none;
     }
