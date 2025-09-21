@@ -1,0 +1,109 @@
+:root {
+  --bg: linear-gradient(to bottom, #a8c4ff, #3630f1);
+  --clr-1: #dce5f9;
+  --clr-2: #a3a4ab;
+  --clr-3: #0010ff;
+  --clr-4: #0005b0;
+  --clr-5: #000025;
+  --clr-6: #ffffff;
+  --clr-7:#0005b0;
+  --clr-8:#3630f1;
+}
+@font-face {
+    font-family: 'algh';
+    src: url('Al-Ghazalia.otf') format('opentype');
+}
+ body {
+  /* Remove default body margins */
+  width: 100vw;
+  max-height: 100vh;
+            display: grid;
+            place-items: center;
+            background: var(--bg);
+            color:#fff;
+            font-family: 'inter';
+            background-attachment: fixed;
+            background-size: cover; /* Applies to both gradient and image */
+            background-position: center; /* Centers the image */
+            background-repeat: no-repeat; /* Prevents image tiling */
+            font-style: italic;
+            margin: 0;
+}
+.page1 {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+ 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  
+
+  .div1 {
+    grid-area: 2 / 1 / 4 / 7;
+  }
+  .div2 {
+    grid-area: 4 / 2 / 5 / 6;
+  }
+  .div3 {
+    grid-area: 6 / 5 / 7 / 6;
+  }
+
+   
+
+    .title {
+        
+        letter-spacing: -1.75px;
+        text-align: center;
+        position: center;
+        overflow: hidden;
+        align-items: center;
+
+        font-size: 4em;
+        font-weight: bold;
+        margin:50px;
+    }
+  
+
+
+
+.subtitle{
+        font-size: 4em;
+        font-family: 'medicalshape';
+        color: #000 ;
+        text-align: center;
+        padding: 10px 0;
+    }
+  }
+.page2 {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .div1 {
+    grid-area: 1 / 1 / 2 / 9;
+  }
+  .div2 {
+    grid-area: 2 / 3 / 3 / 7;
+  }
+  .div3 {
+    grid-area: 3 / 2 / 7 / 8;
+  }
+}
+.page3 {
+display: grid;
+grid-template-columns: repeat(9, 1fr);
+grid-template-rows: repeat(9, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+
+
+.div1 { grid-area: 2 / 2 / 8 / 9; }
+.div2 { grid-area: 8 / 8 / 9 / 10; }
+}
