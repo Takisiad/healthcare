@@ -1,13 +1,14 @@
-:root {
+:root { 
   --bg: linear-gradient(to bottom, #a8c4ff, #3630f1);
   --clr-1: #dce5f9;
-  --clr-2: #a3a4ab;
+  --clr-2: #37FF8B;
   --clr-3: #0010ff;
   --clr-4: #0005b0;
   --clr-5: #000025;
   --clr-6: #ffffff;
   --clr-7:#0005b0;
   --clr-8:#3630f1;
+
 }
 @font-face {
     font-family: 'algh';
@@ -111,7 +112,7 @@
     z-index: 1000; /* Ensure it stays on top */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
  .logo {
-        font-size: 24px;
+        font-size: 50px;
         font-weight: bold;
         color: #fff;
         text-decoration: none;
@@ -140,7 +141,11 @@
         text-shadow: 0 0 5px #ffdd57, 0 0 10px #ffdd57;
 
     }
-    .
+    .nav-links li a:focus {
+        outline: 2px solid #ffdd57; /* Focus outline for accessibility */
+        outline-offset: 2px;
+    } 
+    
   }
 .page1 {
   height: 100vh;
@@ -179,6 +184,9 @@
         font-size: 4em;
         font-weight: bold;
         margin:50px;
+        font-family: 'medicalshape';
+        color: #5807ca ;
+
     }
   
 
@@ -187,67 +195,56 @@
 .subtitle{
         font-size: 4em;
         font-family: 'medicalshape';
-        color: #000 ;
+        color: #5807ca ;
         text-align: center;
         padding: 10px 0;
         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
         letter-spacing: -1.75px;
         margin: 0;
     }
-    /* From Uiverse.io by gharsh11032000 */ 
-.cssbuttons-io-button {
-  background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
-  color: white;
-  font-family: inherit;
-  padding: 0.35em;
-  padding-left: 1.2em;
-  font-size: 17px;
-  border-radius: 10em;
+  /* From Uiverse.io by satyamchaudharydev */ 
+/* === removing default button style ===*/
+.button {
+  margin: 0;
+  height: auto;
+  background: transparent;
+  padding: 0;
   border: none;
-  letter-spacing: 0.05em;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  position: relative;
-  height: 2.8em;
-  padding-right: 3.3em;
   cursor: pointer;
+}
+
+/* button styling */
+.button {
+  --border-right: 6px;
+  --text-stroke-color: rgba(255,255,255,0.6);
+  --animation-color: #37FF8B;
+  --fs-size: 2em;
+  letter-spacing: 3px;
+  text-decoration: none;
+  font-size: var(--fs-size);
+  font-family: "Arial";
+  position: relative;
   text-transform: uppercase;
-  font-weight: 500;
-  box-shadow: 0 0 1.6em rgba(183, 33, 255,0.3),0 0 1.6em hsla(191, 98%, 56%, 0.3);
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  color: transparent;
+  -webkit-text-stroke: 1px var(--text-stroke-color);
 }
-
-.cssbuttons-io-button .icon {
-  background: white;
-  margin-left: 1em;
+/* this is the text, when you hover on button */
+.hover-text {
   position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 2.2em;
-  width: 2.2em;
-  border-radius: 10em;
-  right: 0.3em;
-  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  box-sizing: border-box;
+  content: attr(data-text);
+  color: var(--animation-color);
+  width: 0%;
+  inset: 0;
+  border-right: var(--border-right) solid var(--animation-color);
+  overflow: hidden;
+  transition: 0.5s;
+  -webkit-text-stroke: 1px var(--animation-color);
 }
-
-.cssbuttons-io-button:hover .icon {
-  width: calc(100% - 0.6em);
-}
-
-.cssbuttons-io-button .icon svg {
-  width: 1.1em;
-  transition: transform 0.3s;
-  color: #B721FF;
-}
-
-.cssbuttons-io-button:hover .icon svg {
-  transform: translateX(0.1em);
-}
-
-.cssbuttons-io-button:active .icon {
-  transform: scale(0.9);
+/* hover */
+.button:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 23px var(--animation-color))
 }
 
   }
