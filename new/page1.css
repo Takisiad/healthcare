@@ -195,7 +195,7 @@
 .subtitle{
         font-size: 4em;
         font-family: 'medicalshape';
-        color: #5807ca ;
+        color: var(--clr-4) ;
         text-align: center;
         padding: 10px 0;
         animation: text-focus-in 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
