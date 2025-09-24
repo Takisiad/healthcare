@@ -163,6 +163,13 @@ grid-row-gap: 0px;
     font-family: 'medicalshape';
     src: url('Medical Shape.otf') format('opentype');
 }
+.h1{
+        font-size: 2.5em;
+        font-family: 'medicalshape';
+        color: rgb(97, 125, 209);
+        text-align: center;
+        padding: 10px 0;
+    }
 .subtitle{
         font-size: 4em;
         font-family: 'medicalshape';
