@@ -9,6 +9,7 @@
   --clr-7: #0005b0;
   --clr-8: #3630f1;
 }
+
 @font-face {
   font-family: "ked";
   src: url("Medical\ Shape.otf") format("truetype");
@@ -19,7 +20,7 @@
 }
 .focus-in-contract-bck {
   -webkit-animation: focus-in-contract-bck 1s
-    cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation: focus-in-contract-bck 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 @-webkit-keyframes focus-in-contract-bck {
@@ -60,7 +61,6 @@
   -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
   animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
 }
-
 @-webkit-keyframes text-focus-in {
   0% {
     -webkit-filter: blur(12px);
@@ -86,9 +86,23 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.element-with-hidden-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.element-with-hidden-scrollbar {
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
 body {
-  /* Remove default body margins */
-  width: 100vw;
+  width: 100%;
   max-height: 100vh;
   display: grid;
   place-items: center;
@@ -96,25 +110,26 @@ body {
   color: #fff;
   font-family: "inter";
   background-attachment: fixed;
-  background-size: cover; /* Applies to both gradient and image */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents image tiling */
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
   font-style: italic;
   margin: 0;
 }
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  background-color: rgba(255, 255, 255, 0.1); /* Semi-transparent background */
-  backdrop-filter: blur(10px); /* Blur effect for the background */
+  background-color: rgba(255, 255, 255, 0.1); 
+  backdrop-filter: blur(10px); 
   position: fixed;
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1000; /* Ensure it stays on top */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
   .logo {
     font-size: 50px;
     font-weight: bold;
@@ -136,19 +151,20 @@ body {
     transition: color 0.3s ease;
   }
   .nav-links li a:hover {
-    color: #ffdd57; /* Highlight color on hover */
+    color: #ffdd57; 
     text-shadow: 0 0 5px #ffdd57, 0 0 10px #ffdd57;
   }
   .nav-links li a.active {
-    color: #ffdd57; /* Active link color */
+    color: #ffdd57; 
     font-weight: bold;
     text-shadow: 0 0 5px #ffdd57, 0 0 10px #ffdd57;
   }
   .nav-links li a:focus {
-    outline: 2px solid #ffdd57; /* Focus outline for accessibility */
+    outline: 2px solid #ffdd57; 
     outline-offset: 2px;
   }
 }
+
 .page1 {
   height: 100vh;
   display: grid;
@@ -156,11 +172,11 @@ body {
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  scroll-snap-align: start;
 
   .div1 {
     grid-area: 2 / 1 / 4 / 7;
@@ -197,8 +213,8 @@ body {
     letter-spacing: -1.75px;
     margin: 0;
   }
-  /* From Uiverse.io by satyamchaudharydev */
-  /* === removing default button style ===*/
+  
+  
   .button {
     margin: 0;
     height: auto;
@@ -208,7 +224,7 @@ body {
     cursor: pointer;
   }
 
-  /* button styling */
+  
   .button {
     --border-right: 6px;
     --text-stroke-color: rgba(255, 255, 255, 0.6);
@@ -223,7 +239,7 @@ body {
     color: transparent;
     -webkit-text-stroke: 1px var(--text-stroke-color);
   }
-  /* this is the text, when you hover on button */
+  
   .hover-text {
     position: absolute;
     box-sizing: border-box;
@@ -236,18 +252,23 @@ body {
     transition: 0.5s;
     -webkit-text-stroke: 1px var(--animation-color);
   }
-  /* hover */
+  
   .button:hover .hover-text {
     width: 100%;
     filter: drop-shadow(0 0 23px var(--animation-color));
   }
 }
+
 .page2 {
+  height: 100vh;
+  background-color: cadetblue;
+  align-items: center;
   display: grid;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  scroll-snap-align: start;
 
   .div1 {
     grid-area: 1 / 1 / 2 / 9;
@@ -259,12 +280,15 @@ body {
     grid-area: 3 / 2 / 7 / 8;
   }
 }
+
 .page3 {
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  scroll-snap-align: start;
 
   .div1 {
     grid-area: 2 / 2 / 8 / 9;
