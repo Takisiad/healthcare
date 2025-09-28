@@ -9,16 +9,19 @@
   --clr-6: #ffffff;
   --clr-7: #0005b0;
   --clr-8: #3630f1;
+  
 }
-@font-face {
-  font-family: "ked";
-  src: url("Medical\ Shape.otf") format("truetype");
-}
+
+
 html {
   scroll-behavior: smooth;
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+}
+@font-face {
+  font-family: "ked";
+  src: url("Medical\ Shape.otf") format("truetype");
 }
 @font-face {
   font-family: "algh";
@@ -99,7 +102,7 @@ body {
   max-height: 100vh;
   display: grid;
   place-items: center;
-  background: var(--bg);
+  background: var(--bg2);
   color: #fff;
   font-family: "inter";
   background-attachment: fixed;
@@ -110,16 +113,19 @@ body {
   margin: 0;
 }
 body.light-mode {
-    background: var(--bg2); /* White background - or use: background: url('light-background.jpg') no-repeat center/cover; */
-    color: #000000; /* Black text */
+  background: var(
+    --bg2
+  ); /* White background - or use: background: url('light-background.jpg') no-repeat center/cover; */
+  color: #000000; /* Black text */
 }
 
 /* Night mode (dark theme) */
 body.night-mode {
-    background: var(--bg); /* Dark gray background - or use: background: url('night-background.jpg') no-repeat center/cover; */
-    color: #ffffff; /* White text */
+  background: var(
+    --bg
+  ); /* Dark gray background - or use: background: url('night-background.jpg') no-repeat center/cover; */
+  color: #ffffff; /* White text */
 }
-
 
 .navbar {
   display: flex;
@@ -167,8 +173,7 @@ body.night-mode {
     outline: 2px solid #ffdd57; /* Focus outline for accessibility */
     outline-offset: 2px;
   }
-}
-.switch {
+  .switch {
   font-size: 17px;
   position: relative;
   display: inline-block;
@@ -261,15 +266,11 @@ body.night-mode {
 .switch input:checked ~ .slider .cloud {
   opacity: 1;
 }
-
-
-
-
+}
 
 
 .page1 {
   scroll-snap-align: start;
-
 
   height: 100vh;
   display: grid;
@@ -363,40 +364,4 @@ body.night-mode {
     filter: drop-shadow(0 0 23px var(--animation-color));
   }
 }
-.page2 {
-  scroll-snap-align: start;
 
-
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  grid-template-rows: repeat(7, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-
-  .div1 {
-    grid-area: 1 / 1 / 2 / 9;
-  }
-  .div2 {
-    grid-area: 2 / 3 / 3 / 7;
-  }
-  .div3 {
-    grid-area: 3 / 2 / 7 / 8;
-  }
-}
-.page3 {
-  scroll-snap-align: start;
-
-
-  display: grid;
-  grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: repeat(9, 1fr);
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-
-  .div1 {
-    grid-area: 2 / 2 / 8 / 9;
-  }
-  .div2 {
-    grid-area: 8 / 8 / 9 / 10;
-  }
-}
