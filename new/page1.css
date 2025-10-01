@@ -1,14 +1,14 @@
 :root {
   --bg: linear-gradient(to bottom, #000025, #0005b0);
   --bg2: linear-gradient(to bottom, #c3c3f4, #0005b0);
-  --clr-1: #dce5f9;
-  --clr-2: #37ff8b;
-  --clr-3: #0010ff;
+  --clr-1: #e0d6ff;
+  --clr-2: #6a4cff;
+  --clr-3: #3d00b3;
   --clr-4: #0005b0;
   --clr-5: #000025;
   --clr-6: #ffffff;
   --clr-7: #0005b0;
-  --clr-8: #3630f1;
+  --clr-8: #4d3dff;
   
 }
 
@@ -161,16 +161,16 @@ body.night-mode {
     transition: color 0.3s ease;
   }
   .nav-links li a:hover {
-    color: #ffdd57; /* Highlight color on hover */
-    text-shadow: 0 0 5px #ffdd57, 0 0 10px #ffdd57;
+    color: #8a2be2; /* Highlight color on hover */
+    text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2;
   }
   .nav-links li a.active {
-    color: #ffdd57; /* Active link color */
+    color: #8a2be2; /* Active link color */
     font-weight: bold;
-    text-shadow: 0 0 5px #ffdd57, 0 0 10px #ffdd57;
+    text-shadow: 0 0 5px #8a2be2, 0 0 10px #8a2be2;
   }
   .nav-links li a:focus {
-    outline: 2px solid #ffdd57; /* Focus outline for accessibility */
+    outline: 2px solid #8a2be2; /* Focus outline for accessibility */
     outline-offset: 2px;
   }
   .switch {
@@ -218,7 +218,7 @@ body.night-mode {
 }
 
 .switch input:checked + .slider {
-  background-color: #00a6ff;
+  background-color: #0005b0;
 }
 
 .switch input:checked + .slider:before {
@@ -306,7 +306,7 @@ body.night-mode {
     font-weight: bold;
     margin: 50px;
     font-family: "medicalshape";
-    color: #5807ca;
+    color: #6f42c1;
   }
 
   .subtitle {
@@ -334,7 +334,7 @@ body.night-mode {
   .button {
     --border-right: 6px;
     --text-stroke-color: rgba(255, 255, 255, 0.6);
-    --animation-color: #1eaee7;
+    --animation-color: #a1a9ea;
     --fs-size: 2em;
     letter-spacing: 3px;
     text-decoration: none;
@@ -381,7 +381,7 @@ grid-row-gap: 0px;
   position: relative;
   width: 60%;
   height: 60%;
-  background: lightgrey;
+  background: #e6e6fa;
   border-radius: 1.6em;
   overflow: hidden;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 0.8em 3em 0px;
@@ -394,10 +394,10 @@ grid-row-gap: 0px;
   inset: 0;
   background: radial-gradient(
     circle at 100% 107%,
-    #ff89cc 0%,
-    #9cb8ec 30%,
-    #00ffee 60%,
-    #62c2fe 100%
+    #c3c3f4 0%,
+    #a29cf4 30%,
+    #6a4cff 60%,
+    #3d00b3 100%
   );
 }
 
@@ -463,10 +463,10 @@ grid-row-gap: 0px;
 .box1::before {
   background: radial-gradient(
     circle at 30% 107%,
-    #fdf497 0%,
-    #fdf497 5%,
-    #ff53d4 60%,
-    #62c2fe 90%
+    #d9d9fd 0%,
+    #d9d9fd 5%,
+    #a24cff 60%,
+    #3d00b3 90%
   );
 }
 
@@ -487,7 +487,7 @@ grid-row-gap: 0px;
 }
 
 .box2::before {
-  background: radial-gradient(circle at 30% 107%, #91e9ff 0%, #00acee 90%);
+  background: radial-gradient(circle at 30% 107%, #c3c3f4 0%, #6a4cff 90%);
 }
 
 .box2:hover::before {
@@ -507,7 +507,7 @@ grid-row-gap: 0px;
 }
 
 .box3::before {
-  background: radial-gradient(circle at 30% 107%, #969fff 0%, #b349ff 90%);
+  background: radial-gradient(circle at 30% 107%, #a29cf4 0%, #3d00b3 90%);
 }
 
 .box3:hover::before {
@@ -590,8 +590,8 @@ a {
 
 button {
     border-radius: 20px;
-    border: 1px solid #FF4B2B;
-    background-color: #FF4B2B;
+    border: 1px solid #6f42c1;
+    background-color: #6f42c1;
     color: #FFFFFF;
     font-size: 12px;
     font-weight: bold;
@@ -704,9 +704,9 @@ input {
 }
 
 .overlay {
-    background: #FF416C;
-    background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);
-    background: linear-gradient(to right, #FF4B2B, #FF416C);
+    background: #6f42c1;
+    background: -webkit-linear-gradient(to right, #6f42c1, #3d00b3);
+    background: linear-gradient(to right, #6f42c1, #3d00b3);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 0;
