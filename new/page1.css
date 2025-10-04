@@ -278,7 +278,7 @@ body.night-mode {
   grid-template-rows: repeat(6, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
+  
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -372,11 +372,18 @@ grid-column-gap: 0px;
 grid-row-gap: 0px;
 
 
-.div1 { grid-area: 2 / 3 / 6 / 10; }
-.div2 { grid-area: 2 / 12 / 6 / 20; } 
+.div1 { grid-area: 2 / 3 / 6 / 10;
+place-items: center;
+display: flex;
+justify-content: center;
+align-items: center;}
+.div2 { grid-area: 2 / 12 / 6 / 20; 
+place-items: center;
+display: flex;
+justify-content: center;  } 
 
 
-/* From Uiverse.io by KhoroshN */ 
+
 .socialcard{
   position: relative;
   width: 60%;
