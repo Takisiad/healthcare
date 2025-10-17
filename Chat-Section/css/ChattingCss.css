@@ -1,0 +1,179 @@
+:root {
+  --bg: #d0b796;
+  --dashbrd: #fcf2e1;
+  
+  --nav-text: #fff;
+  --High-text: #274840;
+  --rest-text: #474c3b;
+  
+  --nav: #1f5849;
+  
+  --cards-bg: #f4e5c6;
+  --contact:#c0b4a8;
+  --brown:#453c33;
+  --muted: #6b6b6b;
+}
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  scroll-behavior: smooth;
+  background: var(--bg);
+  color: var(--rest-text);
+  height: 100vh;
+  margin: 0;
+}
+
+.MainPage::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+    position:relative;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 12vh;
+    background-color: var(--nav);
+    z-index: 999;
+    .left {
+        color: var(--nav-text);
+        position:fixed;
+        font-size: 3vh;
+        text-align: center;
+        left: 1.5vw;
+    }
+    .right {
+        text-align: center;
+        position:fixed;
+        font-size: 3vh;
+        right: 1.5vw;
+        a {
+            font-size: 2.3vw;
+            color: var(--nav-text);
+            margin: 0 2vh;
+            text-decoration: none;
+        }
+    }
+
+}
+
+.Page {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.dashboard {
+    grid-area: 1 / 1 / 4 / 10; 
+    background-color: var(--dashbrd);
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 100%;
+    .MiniDash {
+        display: grid;
+        grid-template-columns: repeat(9, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        height: 40vh;
+        align-items: center;
+    }
+    #title {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 3.5vh;
+        font-weight: bold;
+        grid-area: 2 / 2 / 3 / 6;
+        color: var(--High-text);
+    }
+    .Card {
+        grid-area: 2 / 7 / 5 / 9;
+        background-color: var(--cards-bg);
+        border-radius: 10%;
+        height: 35vh;
+        .mycard {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
+            grid-column-gap: 0;
+            grid-row-gap: 0;
+            align-items: center;
+
+            #image {
+                grid-area: 2 / 2 / 4 / 4;
+                background-image:url('../assets/images/newPfpFr.png');
+                background-position: center;
+                background-size: cover;
+                border-radius: 50%;
+                height: 7vw;
+                width: 7vw;
+            }
+            .information {
+                grid-area: 4 / 1 / 6 / 5;
+                font-size: 1.3vw;
+                margin-left: 1vw;
+                #name{font-weight: bold;}
+                #job{margin-left: 1vw;}
+            }
+
+        }
+
+    }
+    .Attributes{
+        align-self: center;
+        /* text-align: center; */
+        font-size: 2.5vh;
+        color: var(--rest-text);
+    }
+    #attribute01 { grid-area: 3 / 2 / 4 / 3; }
+    #attribute02 { grid-area: 3 / 3 / 4 / 4; }
+    #attribute03 { grid-area: 3 / 4 / 4 / 5; }
+    #attribute04 { grid-area: 4 / 2 / 5 / 3; }
+    #attribute05 { grid-area: 4 / 3 / 5 / 4; }
+    #attribute06 { grid-area: 4 / 4 / 5 / 5; }
+}
+
+.marketplace {
+    margin-top: 1vh;
+    grid-area: 4 / 3 / 7 / 6;
+    height: 37vh;
+    width: 17vw;
+    border-radius: 10%;
+    overflow: hidden;
+    .card {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        .image {
+            grid-area: 1 / 1 / 3 / -1;
+            height: 14vh;
+            width: 100%;
+            /* background-color: #fff; */
+            background-image: url(../assets/images/Deals/OMG.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .price {
+            grid-area: 3 / 1 / 4 / -1;
+            height: 5vh;
+            width: 100%;
+            background-color: var(--nav);
+        }
+        .Market {
+            grid-area: 4 / 1 / -1 / -1;
+            transform: translateY(-1.88vh);
+            height: 25vh;
+            width: 100%;
+            background-color: var(--cards-bg);
+        }
+    }
+}
+.wallet { grid-area: 4 / 6 / 6 / 8; }
+.employee-card { grid-area: 6 / 6 / 7 / 7; }
+.div5 { grid-area: 6 / 7 / 7 / 8; }
+.chat { grid-area: 7 / 5 / 10 / 8; }
+.offers { grid-area: 7 / 3 / 10 / 5; }
