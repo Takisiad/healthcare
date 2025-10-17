@@ -1,72 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/ChattingCss.css">
-    <title>Nurses Chat APEX HEALTH</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apex Health</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="MainPage">
-    <header>
-        <div class="left">
-            <h1>Apex Health</h1>
+  <header>
+    <nav class="Navigation-Bar">
+        <a  href="#Home">Home</a>
+        <a href="#Why-Apex">Why Us</a>
+        <a href="#Our-Services">Our Services</a>
+        <a href="#Contact-Us">Contact Us</a>
+    </nav>
+  </header>
+  <main>
+    <div class="page one" id="Home">
+      <div class="Chat-Section Page-One"></div>
+      <div class="Title My-Auto-Show-Left">
+        <h1>Apex Health</h1>
+      </div>
+      <div class="Welcome-Message My-Auto-Show-Left-Delayed-And-Blured">
+        <p>HealthAI, we are a university-driven startup revolutionizing healthcare through ethical AI. Our mission is to make medical guidance accessible, safe, and inclusive, connecting users with professional services while prioritizing privacy and trust.</p>
+      </div>
+      <div class="Get-Started My-Auto-Show-Left-Delayed">
+        <button class="Animated-Button">
+          <span>Get Started</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+      <div class="Image-Section ImPage-One My-Auto-Show-Right"> </div>
+      
+      <div class="Arrow-Down My-Auto-Show-Up">
+        <a href="#Why-Apex"><i class="arrow down" ></i></a>
+      </div>
+    </div>
+    <div class="page two" id="Why-Apex">
+      <div class="Title My-Scroll-Show-Up">
+        <h1><pre>
+Why choose 
+Apex Health
+        </pre> </h1>
+      </div>
+      <div class="subTitle My-Scroll-Show-Up">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus consequatur alias illum totam dolor exercitationem rerum placeat similique reiciendis quidem illo fuga earum eius, quia velit optio voluptatum eum laudantium?</p>
+      </div>
+      <div class="Learn-more My-Scroll-Show-Up">
+        <button class="Animated-Button">
+          <span>Learn more</span>
+          <i class="fa-solid fa-question"></i>
+        </button>
+      </div>
+      <div class="logo My-Scroll-Show-Up"></div>
+    </div>
+    <div class="page three" id="Our-Services">
+      <div class="Title My-Scroll-Show-Up">
+        <h1>Our Services</h1>
+      </div>
+      <div class="Options My-Scroll-Show-Up">
+        <span class="bordderway">
+          <div class="No-Margin-Option">
+            Doctors
+          </div>
+          <div class="Option">
+            Nursing
+          </div>
+          <div class="Option">
+            Pharmacy
+          </div>
+          <div class="Option">
+            Artificial Intelligence
+          </div>
+        </span>
+      </div>
+      <div class="Cards My-Scroll-Show-Up">
+        <div class="card left">
+          <i class="fas fa-universal-access icon"></i>
+          <h1 class="Card-Title">Special Needs Support</h1>
+          <p class="Card-Description">Inclusive interfaces and specialized AI designed to support users with special needs and accessibility requirements</p>
         </div>
-        <div class="right">
-            <a href=""><i class="fa-solid fa-comment"></i></a>
-            <a href=""><i class="fa-solid fa-screwdriver-wrench"></i></a>
-            <a href=""><i class="fa-solid fa-calendar-days"></i></a>
-            <a href=""><i class="fa-solid fa-briefcase"></i></a>
-            <a href=""><i class="fa-solid fa-wallet"></i></a>
+        <div class="card right">
+          <i class="fas fa-user-md"></i>
+          <h1 class="Card-Title">Doctor Portal</h1>
+          <p class="Card-Description">Comprehensive profile management, medical databases access, and secure client communication platform for healthcare professionals</p>
         </div>
-    </header>
-    <main>
-        <div class="Page">
-            <div class="dashboard">
-                <div class="MiniDash">
-                    <div id="title"><h1>Main Dashboard</h1></div>
-                    <div class="Card">
-                        <div class="mycard">
-                            <div id="image"></div>
-                            <div class="information">
-                                <div id="name">Zouaghi Mohamed Racem</div>
-                                <div id="job">Nurse</div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="Attributes" id="attribute01">Age: 20</div>
-                    <div class="Attributes" id="attribute02">Wylaya: Tebessa</div>
-                    <div class="Attributes" id="attribute03">Rating: 4.5</div>
-                    <div class="Attributes" id="attribute04">sex: Male</div>
-                    <div class="Attributes" id="attribute05">UID: 76876123</div>
-                </div>
-            </div>
-            <div class="marketplace">
-                <div class="card">
-                    <div class="image"></div>
-                    <div class="price"></div>
-                    <div class="Market"></div>
-                </div>
-            </div>
-            <div class="wallet"> </div>
-            <div class="employee-card"> </div>
-            <div class="div5"> </div>
-            <div class="chat"> </div>
-            <div class="offers"> </div>
+        <div class="card left">
+          <i class="fas fa-clock"></i>
+          <h1 class="Card-Title">Medication Reminders</h1>
+          <p class="Card-Description">Automated notification system to help you stay on track with your medication schedule and dosage requirements</p>
         </div>
-    </main>
-    <footer></footer>
-</body>
-</html>
-
-
-<!-- 
-1 is the dashboard
-2 nursing tools marketplace
-3 wallet
-4 employee card
-5 chat
-6 offers
-7 job offers
--->
+        <div class="card right">
+          <i class="fas fa-calendar-check"></i>
+          <h1 class="Card-Title">Reservations & Analysis</h1>
+          <p class="Card-Description">Easy appointment scheduling system with receipt and medical document analysis capabilities for comprehensive care</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="four page" id="Contact-Us">
+      <div class="contact-form My-Scroll-Show-Up">
+        <span class="heading">Contact Us</span>
+        <!-- To be improved -->
+        <form>
+          <label for="name">Name:</label>
+          <input id="name" type="text" required="">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required="">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" required=""></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="Title My-Scroll-Show-Up">
+        <h1 >Get in Touch</h1>
+      </div>
+      <div class="Caption My-Scroll-Show-Up">
+        <p>Ready to revolutionize healthcare with AI? Contact our team for partnerships, consultations, or university collaborations</p>
+      </div>
+      <div class="Get-in-Touch">
+        <div class="contact-item My-Scroll-Show-Up">
+          <i class="fas fa-envelope"></i>
+          <strong>Email:</strong> <a href="mailto:rassemzouaghi@gmail.com" >apexhealth@health-ai.com</a>
+        </div>
+        <div class="contact-item My-Scroll-Show-Up">
+          <i class="fas fa-phone"></i>
+          <strong>Phone:</strong> <a href="tel:+213 698 779 856">+213 698 779 856</a>
+        </div>
+        <div class="contact-item My-Scroll-Show-Up">
+          <i class="fas fa-map-marker-alt"></i>
+          <strong>Address:</strong> Echahid Cheikh Larbi Tebessi University, Tebessa
+        </div>
+        <a href="https://www.instagram.com" target="_blank"><i class="fa-brands fa-instagram My-Scroll-Show-Up"></i></a>
+        <a href="https:/x.com" target="_blank"><i class="fa-brands fa-x-twitter My-Scroll-Show-Up"></i></a>
+        <a href="https:/facebook.com" target="_blank"><i class="fa-brands fa-facebook-f My-Scroll-Show-Up"></i></a>
+      </div>
+    </div>
+    <div class="credits">
+      <p>© 2025 HealthAI - Apex Health. All rights reserved.  | University Innovation Project</p>
+    </div>
+  </footer>
+  <script src="/js/main.js"></script>
+<body>
