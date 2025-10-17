@@ -1,67 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Apex Health</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Lora:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/ChattingCss.css">
+    <title>Nurses Chat APEX HEALTH</title>
 </head>
-
-<body class="element-with-hidden-scrollbar">
-  <nav class="navbar">
-      <div class="logo">Apex Health</div>
-      <ul class="nav-links">
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li><a href="#Contact">Contact</a></li>
-      </ul>
-
-  </nav>
-  <div class="page1" id="Home">
-      <div class="div1">
-        <h1 class="title">Apex Health</h1>
-      </div>
-
-      <div class="div2">
-        <h3 class="subtitle"> <q>Health care is not a privilege. It's a right as fundamental as civil rights</q> <sub> - Rod Blagojevich</sub></h3>
-      </div>
-
-      <div class="div3">
-        <!-- To be replaced -->
-        <button class="button" data-text="Awesome">
-          <span class="actual-text">&nbsp;get&nbsp;started&nbsp;</span>
-          <span aria-hidden="true" class="hover-text">&nbsp;get&nbsp;started&nbsp;</span>
-        </button>
-      </div>
-  </div>
-  <div class="page2" id="About">
-    <div class="div1">
-        <p></p>
-    </div>
-
-      <div class="div2">
-        <div class="box autoShow">
-          <h1 class="box-header">About Us:</h1>
-          <p class="box-body autoShow">iDoctor is an innovative project that leverages the power of Artificial Intelligence to provide preliminary medical guidance and health information. Our mission is to make basic healthcare knowledge more accessible and to empower individuals to make informed decisions about their well-being.</p>
+<body class="MainPage">
+    <header>
+        <div class="left">
+            <h1>Apex Health</h1>
         </div>
-      </div>
-
-    <div class="div3">
-        <button class="learn-button autoShow">Learn more</button>
-    </div>
-  </div>
-  <div class="page3" id="Services">
-      <div class="div1">
-        <p>Content for Div 1</p>
-      </div>
-
-      <div class="div2">
-        <p>Content for Div 2</p>
-      </div>
-  </div>
-  <script src="script.js"></script>
+        <div class="right">
+            <a href=""><i class="fa-solid fa-comment"></i></a>
+            <a href=""><i class="fa-solid fa-screwdriver-wrench"></i></a>
+            <a href=""><i class="fa-solid fa-calendar-days"></i></a>
+            <a href=""><i class="fa-solid fa-briefcase"></i></a>
+            <a href=""><i class="fa-solid fa-wallet"></i></a>
+        </div>
+    </header>
+    <main>
+        <div class="Page">
+            <div class="dashboard">
+                <div class="MiniDash">
+                    <div id="title"><h1>Main Dashboard</h1></div>
+                    <div class="Card">
+                        <div class="mycard">
+                            <div id="image"></div>
+                            <div class="information">
+                                <div id="name">Zouaghi Mohamed Racem</div>
+                                <div id="job">Nurse</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Attributes" id="attribute01">Age: 20</div>
+                    <div class="Attributes" id="attribute02">Wylaya: Tebessa</div>
+                    <div class="Attributes" id="attribute03">Rating: 4.5</div>
+                    <div class="Attributes" id="attribute04">sex: Male</div>
+                    <div class="Attributes" id="attribute05">UID: 76876123</div>
+                </div>
+            </div>
+            <div class="marketplace">
+                <div class="card">
+                    <div class="image"></div>
+                    <div class="price"></div>
+                    <div class="Market"></div>
+                </div>
+            </div>
+            <div class="wallet"> </div>
+            <div class="employee-card"> </div>
+            <div class="div5"> </div>
+            <div class="chat"> </div>
+            <div class="offers"> </div>
+        </div>
+    </main>
+    <footer></footer>
 </body>
-
 </html>
+
+
+<!-- 
+1 is the dashboard
+2 nursing tools marketplace
+3 wallet
+4 employee card
+5 chat
+6 offers
+7 job offers
+-->
